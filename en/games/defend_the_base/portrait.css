@@ -1,0 +1,128 @@
+header {
+    background-color: rgb(100, 100, 100);
+    position: fixed;
+    top: 0;
+    height: 8vh;
+    width: 100%;
+    left: 0;
+    font-family: sans-serif;
+}
+
+header img {
+    position: absolute;
+    left: 1.5vw;
+    height: 7vh;
+    top: 0.5vh;
+}
+
+header h1 {
+    font-size: 2.5vh;
+    position: absolute;
+    top: -0.5vh;
+    left: 23vw;
+    width: 15vh;
+}
+
+body {
+    background-color: rgb(161, 161, 161);
+    position: absolute;
+    top: 8vh;
+}
+
+p {
+    color: black;
+}
+
+.container {
+    width: 14vw;
+    height: 14vw;
+    position: absolute;
+    margin: 0.8vh;
+    bottom: 0;
+    right: 0.25vw;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 14vw;
+    height: 2vw;
+    background-color: #333;
+    margin: 2.8vw 0;
+    transition: 0.4s;
+}
+
+.bar1 {
+    margin: 1.2vw 0 2.8vw;
+}
+
+.bar3 {
+    margin: 2.8vw 0 1.2vw;
+}
+
+.clicked .bar1 {
+    transform: translate(0, 5.9vw) rotate(-45deg);
+    margin: 0;
+}
+
+.clicked .bar2 {
+    opacity: 0;
+}
+
+.clicked .bar3 {
+    transform: translate(0, -3.666666666vw) rotate(45deg);
+    margin: 0;
+}
+
+#menu {
+    height: 89vh;
+    width: 100vw;
+    background-color: rgb(130, 130, 130);
+    position: fixed;
+    right: -100vw;
+    top: 8vh;
+    float: right;
+    transition: 0.5s;
+}
+
+#menu a {
+    display: block;
+    font-family: Arial;
+    font-size: 2vh;
+    padding: 4vh;
+    background-color: rgb(50, 50, 50);
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+}
+
+#menu a#onThisPage {
+    background-color: rgb(90, 90, 90);
+}
+
+#menu.shown {
+    transform: translate(-100vw, 0);
+}
+
+.download {
+    width: 80vw;
+    height: 8.10372771475vh;
+    position: absolute;
+    left: 10vw;
+    top: 20vh;
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 0 0 1.5vh;
+    cursor: pointer;
+    font-size: 5.18595470601vh;
+}
+
+.download img {
+    position: relative;
+    top: 1vh;
+    height: 6vh;
+}
+
+.download:hover {
+    background-color: RoyalBlue;
+}
