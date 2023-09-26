@@ -10,16 +10,17 @@ header {
 
 header img {
     position: absolute;
-    left: 40vw;
-    height: 8.2vh;
-    top: 1.1vh;
+    left: 0.6vw;
+    height: 8.9vh;
+    top: 0.7vh;
 }
 
 header h1 {
+    color: rgb(0, 0, 0);
     font-size: 4.14876376481vh;
     position: absolute;
     top: 0.2vh;
-    left: 45vw;
+    left: 5.5vw;
 }
 
 body {
@@ -34,74 +35,82 @@ p {
 }
 
 .container {
-    width: 2.56222547584vw;
-    height: 5.6721379597vh;
     position: absolute;
-    margin: 1.62061084563vh;
-    bottom: 0;
-    right: 0.25vw;
+    top: 2.5vh;
+    height: 6vh;
+    width: 8vw;
     display: inline-block;
-    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0.5vh;
+    padding: 0.1vh 0.5vw 0 1vw;
 }
 
-.bar1, .bar2, .bar3 {
-    width: 2.56222547584vw;
-    height: 0.83030542281vh;
+.container h3 {
+    margin: 0.5vh 0 0 0;
+    font-size: 3.5vh;
+    width: 5vw;
+}
+
+#apps_container {
+    left: 70vw;
+}
+
+#games_container {
+    left: 80vw;
+}
+
+.bar1, .bar2{
+    position: relative;
+    top: -4vh;
+    display: inline-block;
+    width: 1vw;
+    height: 0.5vh;
     background-color: #333;
-    margin: 1.08040723042vh 0;
     transition: 0.4s;
 }
 
 .bar1 {
-    margin: 0.5402036152vh 0 1.08040723042vh;
+    left: 6vw;
+    transform: rotate(45deg);
 }
 
-.bar3 {
-    margin: 1.08040723042vh 0 0.5402036152vh;
+.bar2 {
+    left: 5.3vw;
+    transform: rotate(-45deg);
 }
 
-.clicked .bar1 {
-    transform: translate(0, 2.2vh) rotate(-45deg);
-    margin: 0;
+.container:hover {
+    background-color: rgb(200, 200, 200);
+    border-radius: 0.5vh 0.5vh 0 0;
 }
 
-.clicked .bar2 {
-    opacity: 0;
+.container:hover .bar1 {
+    transform: rotate(-45deg);
 }
 
-.clicked .bar3 {
-    transform: translate(0, -1.7vh) rotate(45deg);
-    margin: 0;
+.container:hover .bar2 {
+    transform: rotate(45deg);
 }
 
-#menu {
-    width: 10vw;
-    background-color: rgb(130, 130, 130);
-    position: fixed;
-    top: 12vh;
-    right: -10vw;
-    float: right;
-    transition: 0.5s;
+.menu_list {
+    padding-top: 1vh;
+    position: relative;
+    width: 9.5vw;
+    background-color: rgb(200, 200, 200);
+    border-radius: 0 0 0.5vh 0.5vh;
+    display: none;
 }
 
-#menu a {
-    display: block;
-    font-family: Arial;
-    font-size: 2vh;
-    padding: 2.10679409932vh;
-    background-color: rgb(50, 50, 50);
-    color: rgb(200, 200, 200);
-    text-decoration: none;
+.menu_list a {
+    display: inline-block;
+    margin: 1vh 0.5vw 1vh 0.5vw;
 }
 
-#menu a:hover {
-    background-color: rgb(50, 50, 50, 0.1);
+#apps_menu {
+    top: -2vh;
+    left: -1vw;
 }
 
-#menu a#onThisPage {
-    background-color: rgb(100, 100, 100);
-}
-
-#menu.shown {
-    transform: translate(-10vw, 0);
+.container:hover .menu_list {
+    display: inline-block;
 }
